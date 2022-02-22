@@ -44,7 +44,12 @@
     <section class="hero color-hero">
         <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button" type="button">Заказать услугу</button>
+            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close class="modal-btn" type="button"></button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -82,12 +87,15 @@
             <ul class="section-items list">
                 <li class="section-work">
                     <img class="section-img" src="./images/box1(1).jpg" alt="фото разработки" width="370">
+                    <p class="work-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                 </li>
                 <li class="section-work">
                     <img class="section-img" src="./images/box2(1).jpg" alt="фото оптимизации" width="370">
+                    <p class="work-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                 </li>
                 <li class="section-work">
                     <img class="section-img" src="./images/box3(1).jpg" alt="фото стилизации" width="370">
+                    <p class="work-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                 </li>
             </ul>
         </div>
@@ -356,6 +364,7 @@
             </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
